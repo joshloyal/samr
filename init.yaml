@@ -1,0 +1,19 @@
+### Linear SVC
+classifier : linear_svm
+classifier_args : {penalty : l1, dual : False, tol : 0.001}
+### SGD
+#classifier : sgd
+#classifier_args : {alpha : 0.0001, n_iter : 50}
+### RandomeForest
+#classifier : randomforest
+#classifier_args : {n_estimators : 100, min_samples_leaf : 10, n_jobs : -1}
+lowercase : True
+bagwords: 
+ binary : True 
+ ngram_range : !!python/tuple [1, 5]
+ min_df : 0
+ max_features : null
+kbest : null
+sgdovo : True
+sentiment_score : True
+wordnet : True
